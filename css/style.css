@@ -158,20 +158,16 @@ h2{
 
 }
 
-.primary{
-
-    background:#238636;
-
-    color:white;
-
+.primary {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.22);
 }
 
-.primary:hover{
-
-    background:#2ea043;
-
-    transform:translateY(-3px);
-
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 35px rgba(124, 58, 237, 0.30);
 }
 
 .secondary{
