@@ -1,66 +1,673 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
 
-  <title>Aline Soares | Data & Business Intelligence</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <link rel="stylesheet" href="css/style.css" />
+  <meta
+    name="description"
+    content="Portfólio profissional de Aline Soares, Analista Sênior de Dados e Business Intelligence."
+  >
+
+  <title>Aline Soares | Dados & Business Intelligence</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="container header-content">
+
+      <a href="#inicio" class="logo">
+        Aline<span>.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+
   <main>
-    <section class="hero">
-      <p class="eyebrow">Data • Business Intelligence • Analytics</p>
 
-      <h1>Aline Soares</h1>
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
 
-      <h2>Analista Sênior de Dados & Business Intelligence</h2>
+        <div class="hero-text">
 
-      <p class="subtitle">
-        Senior Data & Business Intelligence Analyst
-      </p>
+          <p class="eyebrow">
+            Data • Business Intelligence • Analytics
+          </p>
 
-      <p class="description">
-        Transformando dados complexos em inteligência para apoiar decisões estratégicas,
-        automação de processos e soluções orientadas a impacto.
-      </p>
-      <div class="actions">
-        <a href="#projetos" class="btn primary">Conheça meus projetos</a>
-        <a href="#" class="btn secondary">Baixar currículo</a>
-      </div>
-      <div class="skills">
-        <span>SQL</span>
-        <span>Python</span>
-        <span>PostgreSQL</span>
-        <span>Power BI</span>
-        <span>Pentaho PDI</span>
-        <span>ETL</span>
+          <h1>Aline Soares</h1>
+
+          <h2>
+            Analista Sênior de Dados & Business Intelligence
+          </h2>
+
+          <p class="subtitle">
+            Senior Data & Business Intelligence Analyst
+          </p>
+
+          <p class="description">
+            Transformando dados complexos em inteligência para apoiar
+            decisões estratégicas, automatizar processos e desenvolver
+            soluções orientadas a impacto.
+          </p>
+
+          <div class="actions">
+            <a href="#projetos" class="btn primary">
+              Conheça meus projetos
+            </a>
+
+            <a href="#" class="btn secondary" id="curriculo-link">
+              Baixar currículo
+            </a>
+          </div>
+
+          <div class="skills hero-skills">
+            <span>SQL</span>
+            <span>Python</span>
+            <span>PostgreSQL</span>
+            <span>Power BI</span>
+            <span>Pentaho PDI</span>
+            <span>ETL</span>
+          </div>
+
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+
+          <div class="data-card main-card">
+            <div class="card-header">
+              <span>Data Intelligence</span>
+              <span class="status">Online</span>
+            </div>
+
+            <div class="chart">
+              <span style="height: 42%"></span>
+              <span style="height: 68%"></span>
+              <span style="height: 52%"></span>
+              <span style="height: 84%"></span>
+              <span style="height: 72%"></span>
+              <span style="height: 95%"></span>
+            </div>
+
+            <div class="card-metrics">
+              <div>
+                <strong>BI</strong>
+                <small>Estratégia</small>
+              </div>
+
+              <div>
+                <strong>ETL</strong>
+                <small>Integração</small>
+              </div>
+
+              <div>
+                <strong>SQL</strong>
+                <small>Dados</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-one">
+            Power BI
+          </div>
+
+          <div class="floating-card floating-card-two">
+            Python
+          </div>
+
+        </div>
+
       </div>
     </section>
-    <section class="about" id="sobre">
-  <p class="section-label">Sobre mim</p>
 
-  <h2 class="section-title">
-    Dados, tecnologia e impacto social.
-  </h2>
 
-  <div class="about-content">
-    <p>
-      Sou Analista Sênior de Dados e Business Intelligence, com experiência
-      na construção de soluções de dados para apoiar decisões estratégicas,
-      monitoramento de políticas públicas e melhoria de processos.
-    </p>
+    <!-- SOBRE MIM -->
+    <section class="section about" id="sobre">
+      <div class="container">
 
-    <p>
-      Atuo com desenvolvimento de processos ETL, modelagem e tratamento de dados,
-      automação de relatórios, criação de indicadores e integração de bases
-      governamentais utilizando SQL, Python, PostgreSQL, Pentaho PDI e Power BI.
-    </p>
-  </div>
-</section>
+        <p class="section-label">Sobre mim</p>
+
+        <h2 class="section-title">
+          Dados, tecnologia e impacto social.
+        </h2>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p>
+              Sou Analista Sênior de Dados e Business Intelligence, com
+              experiência na construção de soluções de dados para apoiar
+              decisões estratégicas, monitoramento de políticas públicas e
+              melhoria de processos.
+            </p>
+
+            <p>
+              Atuo no desenvolvimento de processos ETL, modelagem e tratamento
+              de dados, automação de relatórios, criação de indicadores e
+              integração de bases governamentais.
+            </p>
+
+            <p>
+              Minha trajetória reúne experiência em Business Intelligence,
+              análise de dados, gestão da informação, sistemas de saúde,
+              monitoramento de programas sociais e geoprocessamento.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+
+            <article class="highlight-card">
+              <strong>15+</strong>
+              <span>Anos de experiência com dados, informação e gestão</span>
+            </article>
+
+            <article class="highlight-card">
+              <strong>BI</strong>
+              <span>Dashboards, indicadores e suporte à alta gestão</span>
+            </article>
+
+            <article class="highlight-card">
+              <strong>ETL</strong>
+              <span>Integração, tratamento e automação de dados</span>
+            </article>
+
+            <article class="highlight-card">
+              <strong>Impacto</strong>
+              <span>Soluções aplicadas a políticas e programas públicos</span>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- COMPETÊNCIAS -->
+    <section class="section competencies" id="competencias">
+      <div class="container">
+
+        <p class="section-label">Competências</p>
+
+        <h2 class="section-title">
+          Tecnologias aplicadas a problemas reais.
+        </h2>
+
+        <div class="competencies-grid">
+
+          <article class="competency-card">
+            <span class="card-number">01</span>
+            <h3>Business Intelligence</h3>
+            <p>
+              Desenvolvimento de dashboards, indicadores, métricas e produtos
+              analíticos para acompanhamento gerencial e tomada de decisão.
+            </p>
+            <div class="tags">
+              <span>Power BI</span>
+              <span>DAX</span>
+              <span>KPIs</span>
+            </div>
+          </article>
+
+          <article class="competency-card">
+            <span class="card-number">02</span>
+            <h3>Engenharia e Integração de Dados</h3>
+            <p>
+              Construção de pipelines, processos ETL, integração de bases e
+              padronização de informações provenientes de diferentes fontes.
+            </p>
+            <div class="tags">
+              <span>Pentaho PDI</span>
+              <span>Python</span>
+              <span>ETL</span>
+            </div>
+          </article>
+
+          <article class="competency-card">
+            <span class="card-number">03</span>
+            <h3>Banco de Dados</h3>
+            <p>
+              Modelagem, tratamento, consultas avançadas, views, funções,
+              validações e organização de estruturas relacionais.
+            </p>
+            <div class="tags">
+              <span>PostgreSQL</span>
+              <span>SQL</span>
+              <span>Data Warehouse</span>
+            </div>
+          </article>
+
+          <article class="competency-card">
+            <span class="card-number">04</span>
+            <h3>Qualidade e Governança</h3>
+            <p>
+              Aplicação de controles de completude, consistência, duplicidade,
+              rastreabilidade e integridade das informações.
+            </p>
+            <div class="tags">
+              <span>Qualidade</span>
+              <span>LGPD</span>
+              <span>Governança</span>
+            </div>
+          </article>
+
+          <article class="competency-card">
+            <span class="card-number">05</span>
+            <h3>Automação</h3>
+            <p>
+              Automação de relatórios, processamento de arquivos, rotinas de
+              banco e geração de produtos gerenciais.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Excel</span>
+              <span>PDF</span>
+            </div>
+          </article>
+
+          <article class="competency-card">
+            <span class="card-number">06</span>
+            <h3>Gestão e Monitoramento</h3>
+            <p>
+              Estruturação de indicadores, acompanhamento de resultados e
+              produção de informações para políticas públicas.
+            </p>
+            <div class="tags">
+              <span>Monitoramento</span>
+              <span>Gestão</span>
+              <span>Analytics</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section class="section projects" id="projetos">
+      <div class="container">
+
+        <p class="section-label">Projetos</p>
+
+        <h2 class="section-title">
+          Soluções de dados, BI e automação.
+        </h2>
+
+        <p class="section-introduction">
+          Os projetos serão apresentados como estudos de caso, utilizando
+          informações públicas, fictícias ou anonimizadas para preservar
+          confidencialidade, segurança e proteção de dados.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card featured">
+            <div class="project-top">
+              <span class="project-category">
+                BI • ETL • Políticas públicas
+              </span>
+
+              <span class="project-status">
+                Em construção
+              </span>
+            </div>
+
+            <h3>Auxílio Pernambuco</h3>
+
+            <p>
+              Solução para recebimento, tratamento, cruzamento e validação de
+              dados municipais, aplicação de regras de elegibilidade,
+              priorização e geração de informações gerenciais.
+            </p>
+
+            <div class="project-technologies">
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>Pentaho</span>
+              <span>Power BI</span>
+            </div>
+
+            <a href="#" class="project-link">
+              Ver estudo de caso em breve →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-category">
+                Business Intelligence
+              </span>
+
+              <span class="project-status">
+                Em construção
+              </span>
+            </div>
+
+            <h3>Mães de Pernambuco</h3>
+
+            <p>
+              Estruturação de indicadores, integração de bases e criação de
+              produtos analíticos para acompanhamento de programa social.
+            </p>
+
+            <div class="project-technologies">
+              <span>Power BI</span>
+              <span>SQL</span>
+              <span>PostgreSQL</span>
+            </div>
+
+            <a href="#" class="project-link">
+              Ver estudo de caso em breve →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-category">
+                Monitoramento
+              </span>
+
+              <span class="project-status">
+                Em construção
+              </span>
+            </div>
+
+            <h3>Programa ATITUDE</h3>
+
+            <p>
+              Desenvolvimento de indicadores, relatórios de gestão,
+              dashboards e informações estratégicas para monitoramento de
+              política pública.
+            </p>
+
+            <div class="project-technologies">
+              <span>Power BI</span>
+              <span>Indicadores</span>
+              <span>Gestão</span>
+            </div>
+
+            <a href="#" class="project-link">
+              Ver estudo de caso em breve →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-category">
+                Python • Automação
+              </span>
+
+              <span class="project-status">
+                Em construção
+              </span>
+            </div>
+
+            <h3>Automação de Relatórios</h3>
+
+            <p>
+              Rotina demonstrativa para processamento de dados, cálculo de
+              indicadores e geração automatizada de relatórios em Excel e PDF.
+            </p>
+
+            <div class="project-technologies">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Excel</span>
+              <span>PDF</span>
+            </div>
+
+            <a href="#" class="project-link">
+              Ver estudo de caso em breve →
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section experience" id="experiencia">
+      <div class="container">
+
+        <p class="section-label">Experiência</p>
+
+        <h2 class="section-title">
+          Uma trajetória conectando dados e gestão.
+        </h2>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-period">
+              2025–2026
+            </div>
+
+            <div class="timeline-content">
+              <h3>Analista de BI Sênior</h3>
+              <h4>Qintess</h4>
+
+              <p>
+                Desenvolvimento de soluções de dados e BI para programas
+                estratégicos, incluindo processos ETL, modelagem, integração
+                de bases, indicadores, automações e apoio à tomada de decisão.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-period">
+              2024–2025
+            </div>
+
+            <div class="timeline-content">
+              <h3>Gerente de Projetos TIC Sênior</h3>
+              <h4>Ibrowse Consultoria e Informática</h4>
+
+              <p>
+                Atuação em iniciativas estruturadoras de dados, desenvolvimento
+                de produtos analíticos, qualidade da informação e apoio à
+                gestão estratégica.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-period">
+              2023–2024
+            </div>
+
+            <div class="timeline-content">
+              <h3>Coordenadoria de Projetos e Gestão de Dados</h3>
+              <h4>Governo de Pernambuco</h4>
+
+              <p>
+                Construção de produtos de dados e Business Intelligence,
+                implantação de padrões analíticos e monitoramento da qualidade
+                dos dados estratégicos.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-period">
+              2018–2023
+            </div>
+
+            <div class="timeline-content">
+              <h3>Coordenação de Monitoramento e Gestão da Informação</h3>
+              <h4>Programa ATITUDE</h4>
+
+              <p>
+                Criação de indicadores, relatórios de gestão, dashboards,
+                capacitações e produção de informações para órgãos gestores e
+                fiscalizadores.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-period">
+              2010–2021
+            </div>
+
+            <div class="timeline-content">
+              <h3>Dados, Sistemas de Saúde e Geoprocessamento</h3>
+              <h4>Administrações públicas e instituições de pesquisa</h4>
+
+              <p>
+                Experiência em sistemas de informação em saúde, análise de
+                dados, processamento de bases, pesquisas epidemiológicas e
+                geoprocessamento.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FORMAÇÃO -->
+    <section class="section education" id="formacao">
+      <div class="container">
+
+        <p class="section-label">Formação</p>
+
+        <h2 class="section-title">
+          Formação acadêmica e especialização.
+        </h2>
+
+        <div class="education-grid">
+
+          <article class="education-card">
+            <span>2025–2026</span>
+            <h3>Banco de Dados e Business Intelligence</h3>
+            <p>Pós-graduação — Instituto Líbano</p>
+          </article>
+
+          <article class="education-card">
+            <span>2022–2023</span>
+            <h3>Administração de Banco de Dados</h3>
+            <p>Pós-graduação — Faculdade Metropolitana</p>
+          </article>
+
+          <article class="education-card">
+            <span>2018–2022</span>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>Graduação tecnológica — Universidade Anhanguera</p>
+          </article>
+
+          <article class="education-card">
+            <span>2009–2011</span>
+            <h3>Design Gráfico</h3>
+            <p>Graduação tecnológica — Unibratec</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="container contact-content">
+
+        <div>
+          <p class="section-label">Contato</p>
+
+          <h2 class="section-title">
+            Vamos transformar dados em decisões?
+          </h2>
+
+          <p class="contact-text">
+            Estou disponível para oportunidades, projetos e conexões
+            profissionais nas áreas de Dados, Business Intelligence,
+            Analytics e Automação.
+          </p>
+        </div>
+
+        <div class="contact-links">
+
+          <a
+            href="https://www.linkedin.com/in/alinegs2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+            <span>↗</span>
+          </a>
+
+          <a
+            href="https://github.com/AlineSoares-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+            <span>↗</span>
+          </a>
+
+          <a href="mailto:alinegss@live.com">
+            E-mail
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <p>
+        © <span id="current-year"></span> Aline Soares
+      </p>
+
+      <p>
+        Dados • Business Intelligence • Analytics
+      </p>
+
+    </div>
+  </footer>
+
 
   <script src="js/script.js"></script>
 </body>
