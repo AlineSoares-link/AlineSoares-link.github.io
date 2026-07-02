@@ -96,14 +96,11 @@ h2{
 
 }
 
-.skills{
-
-    display:flex;
-
-    gap:12px;
-
-    flex-wrap:wrap;
-
+.skills span:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
 }
 
 .skills span{
