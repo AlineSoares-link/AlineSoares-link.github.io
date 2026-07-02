@@ -1,1 +1,131 @@
-/* Estilos do site */
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   GERAL
+=========================== */
+
+body{
+    background:#0d1117;
+    color:#f5f5f5;
+    font-family:Segoe UI,Arial,sans-serif;
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.eyebrow{
+
+    color:#58a6ff;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+h1{
+
+    font-size:72px;
+
+    margin-bottom:15px;
+
+}
+
+h2{
+
+    font-size:34px;
+
+    color:#c9d1d9;
+
+    margin-bottom:12px;
+
+}
+
+.subtitle{
+
+    color:#8b949e;
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+.description{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    font-size:20px;
+
+    color:#c9d1d9;
+
+    margin-bottom:45px;
+
+}
+
+.skills{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.skills span{
+
+    padding:12px 18px;
+
+    border:1px solid #30363d;
+
+    border-radius:40px;
+
+    color:#58a6ff;
+
+    background:#161b22;
+
+    transition:.3s;
+
+}
+
+.skills span:hover{
+
+    background:#238636;
+
+    color:white;
+
+}
