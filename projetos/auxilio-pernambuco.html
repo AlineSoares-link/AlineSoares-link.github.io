@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Estudo de caso do projeto Auxílio Pernambuco, desenvolvido por Aline Soares."
+  >
+
+  <title>
+    Auxílio Pernambuco | Estudo de Caso — Aline Soares
+  </title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projeto.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="container header-content">
+
+      <a href="../index.html#inicio" class="logo">
+        Aline<span>.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="../index.html#inicio">Início</a>
+        <a href="../index.html#sobre">Sobre mim</a>
+        <a href="../index.html#competencias">Competências</a>
+        <a href="../index.html#projetos">Projetos</a>
+        <a href="../index.html#experiencia">Experiência</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="project-page">
+
+    <!-- APRESENTAÇÃO -->
+    <section class="project-hero">
+      <div class="container project-hero-grid">
+
+        <div>
+
+          <a
+            href="../index.html#projetos"
+            class="project-breadcrumb"
+          >
+            ← Voltar para projetos
+          </a>
+
+          <p class="eyebrow">
+            Estudo de caso • Dados • BI • Automação
+          </p>
+
+          <h1>
+            Auxílio Pernambuco
+          </h1>
+
+          <p class="project-hero-subtitle">
+            Plataforma integrada para recebimento, tratamento,
+            cruzamento, elegibilidade, priorização, monitoramento
+            e preparação do pagamento de benefícios.
+          </p>
+
+          <div class="project-meta">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>PostgreSQL</span>
+            <span>Pentaho PDI</span>
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>Excel</span>
+            <span>Automação PDF</span>
+            <span>Layout FEBRABAN</span>
+          </div>
+
+        </div>
+
+
+        <aside class="project-summary-card">
+
+          <h2>Resumo da solução</h2>
+
+          <div class="project-summary-list">
+
+            <div class="project-summary-item">
+
+              <div class="project-summary-icon">
+                01
+              </div>
+
+              <div>
+                <strong>Entrada de dados</strong>
+
+                <span>
+                  Recebimento e validação das planilhas municipais.
+                </span>
+              </div>
+
+            </div>
+
+
+            <div class="project-summary-item">
+
+              <div class="project-summary-icon">
+                02
+              </div>
+
+              <div>
+                <strong>Processamento</strong>
+
+                <span>
+                  Pipeline Python, Pentaho PDI e PostgreSQL.
+                </span>
+              </div>
+
+            </div>
+
+
+            <div class="project-summary-item">
+
+              <div class="project-summary-icon">
+                03
+              </div>
+
+              <div>
+                <strong>Inteligência</strong>
+
+                <span>
+                  Elegibilidade, prioridade, desempate e monitoramento.
+                </span>
+              </div>
+
+            </div>
+
+
+            <div class="project-summary-item">
+
+              <div class="project-summary-icon">
+                04
+              </div>
+
+              <div>
+                <strong>Pagamento</strong>
+
+                <span>
+                  Validação e preparação das remessas bancárias.
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+
+    <!-- CONTEXTO -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="case-heading">
+
+          <p class="case-label">
+            01 • Contexto
+          </p>
+
+          <h2 class="case-title">
+            Uma solução de dados para um processo de alta relevância pública.
+          </h2>
+
+          <p class="case-intro">
+            O projeto foi estruturado para receber arquivos enviados pelos
+            municípios, verificar a qualidade das informações, integrar
+            diferentes bases cadastrais, aplicar as regras do programa e
+            produzir dados confiáveis para gestão, atendimento e pagamento.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- DESAFIO -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="case-heading">
+
+          <p class="case-label">
+            02 • Desafio
+          </p>
+
+          <h2 class="case-title">
+            Transformar planilhas heterogêneas em informação confiável.
+          </h2>
+
+        </div>
+
+
+        <div class="challenge-grid">
+
+          <article class="challenge-card">
+
+            <h3>Qualidade dos dados</h3>
+
+            <p>
+              Os arquivos podiam apresentar campos incompletos, formatos
+              divergentes, CPFs inválidos, registros duplicados e diferenças
+              de preenchimento entre os municípios.
+            </p>
+
+          </article>
+
+
+          <article class="challenge-card">
+
+            <h3>Integração de bases</h3>
+
+            <p>
+              Era necessário relacionar os registros municipais às bases
+              cadastrais e à folha de benefícios, preservando a origem,
+              a competência e a rastreabilidade de cada informação.
+            </p>
+
+          </article>
+
+
+          <article class="challenge-card">
+
+            <h3>Regras de negócio</h3>
+
+            <p>
+              A solução precisava centralizar critérios de elegibilidade,
+              prioridade, desempate e ordem final, evitando tratamentos
+              manuais e interpretações diferentes.
+            </p>
+
+          </article>
+
+
+          <article class="challenge-card">
+
+            <h3>Ciclo completo</h3>
+
+            <p>
+              Além da análise, o processo deveria produzir relatórios
+              gerenciais, apoiar a Ouvidoria e preparar os dados necessários
+              para geração e conferência das remessas de pagamento.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MINHA ATUAÇÃO -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="case-heading">
+
+          <p class="case-label">
+            03 • Minha atuação
+          </p>
+
+          <h2 class="case-title">
+            Atuação do processamento à entrega dos produtos finais.
+          </h2>
+
+        </div>
+
+
+        <div class="role-grid">
+
+          <article class="role-card">
+            <span class="role-number">01</span>
+
+            <h3>Processamento Python</h3>
+
+            <p>
+              Leitura, tratamento e padronização dos arquivos recebidos,
+              com geração das bases intermediárias.
+            </p>
+          </article>
+
+
+          <article class="role-card">
+            <span class="role-number">02</span>
+
+            <h3>ETL no Pentaho</h3>
+
+            <p>
+              Construção de Jobs e transformações para carga, cruzamento,
+              regras, ranking, relatórios e remessas.
+            </p>
+          </article>
+
+
+          <article class="role-card">
+            <span class="role-number">03</span>
+
+            <h3>Banco PostgreSQL</h3>
+
+            <p>
+              Modelagem das tabelas, relacionamentos, índices, validações,
+              triggers e estruturas de rastreabilidade.
+            </p>
+          </article>
+
+
+          <article class="role-card">
+            <span class="role-number">04</span>
+
+            <h3>Regras de elegibilidade</h3>
+
+            <p>
+              Implementação dos critérios obrigatórios, prioridade,
+              desempate e ordenação dos registros.
+            </p>
+          </article>
+
+
+          <article class="role-card">
+            <span class="role-number">05</span>
+
+            <h3>Produtos de BI</h3>
+
+            <p>
+              Desenvolvimento de indicadores, relatórios executivos e
+              painel de consulta para apoio à Ouvidoria.
+            </p>
+          </article>
+
+
+          <article class="role-card">
+            <span class="role-number">06</span>
+
+            <h3>Documentação e testes</h3>
+
+            <p>
+              Produção de documentação técnica, dicionário de dados,
+              testes de carga, validações e evidências de processamento.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ARQUITETURA -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="case-heading">
+
+          <p class="case-label">
+            04 • Arquitetura
+          </p>
+
+          <h2 class="case-title">
+            Fluxo integrado de dados, análise e pagamento.
+          </h2>
+
+        </div>
+
+
+        <div class="architecture-flow">
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 01</span>
+
+            <strong>Planilhas municipais</strong>
+
+            <p>
+              Arquivos XLS/XLSX enviados pelos municípios.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 02</span>
+
+            <strong>Python</strong>
+
+            <p>
+              Validação, tratamento e geração de arquivos intermediários.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 03</span>
+
+            <strong>Pentaho PDI</strong>
+
+            <p>
+              Orquestração das cargas, cruzamentos e regras.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 04</span>
+
+            <strong>PostgreSQL</strong>
+
+            <p>
+              Armazenamento, integração, análise e rastreabilidade.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 05</span>
+
+            <strong>Bases cadastrais</strong>
+
+            <p>
+              Cruzamento com informações cadastrais e folha de benefícios.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 06</span>
+
+            <strong>Regras e ranking</strong>
+
+            <p>
+              Elegibilidade, prioridade, desempate e ordem final.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 07</span>
+
+            <strong>Power BI e relatórios</strong>
+
+            <p>
+              Produtos gerenciais e suporte ao atendimento.
+            </p>
+          </article>
+
+
+          <article class="architecture-item">
+            <span class="architecture-step">ETAPA 08</span>
+
+            <strong>Remessa bancária</strong>
+
+            <p>
+              Conciliação, validação e preparação do arquivo de pagamento.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- RESULTADOS -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="case-heading">
+
+          <p class="case-label">
+            05 • Resultados
+          </p>
+
+          <h2 class="case-title">
+            Mais padronização, rastreabilidade e segurança operacional.
+          </h2>
+
+        </div>
+
+
+        <div class="results-grid">
+
+          <article class="result-card">
+            <strong>Processamento automatizado</strong>
+
+            <p>
+              Consolidação e tratamento automatizado de milhares de registros
+              provenientes de diferentes arquivos municipais.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Regras centralizadas</strong>
+
+            <p>
+              Aplicação uniforme dos critérios de elegibilidade, prioridade
+              e desempate.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Rastreabilidade</strong>
+
+            <p>
+              Identificação do lote, arquivo, município, linha de origem,
+              competência e etapas do processamento.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Qualidade dos dados</strong>
+
+            <p>
+              Diagnóstico de duplicidades, documentos inválidos,
+              incompletudes e divergências cadastrais.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Apoio à gestão</strong>
+
+            <p>
+              Relatórios executivos e indicadores para monitoramento dos
+              municípios e dos resultados do programa.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Atendimento ao cidadão</strong>
+
+            <p>
+              Painel de consulta desenvolvido para subsidiar a Ouvidoria
+              na orientação aos cidadãos.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Processo de pagamento</strong>
+
+            <p>
+              Preparação, conciliação e validação dos dados utilizados na
+              geração das remessas bancárias.
+            </p>
+          </article>
+
+
+          <article class="result-card">
+            <strong>Documentação técnica</strong>
+
+            <p>
+              Registro do fluxo ETL, modelo de dados, regras, dependências,
+              testes e procedimentos operacionais.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- GALERIA -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="case-heading">
+
+          <p class="case-label">
+            06 • Evidências
+          </p>
+
+          <h2 class="case-title">
+            Produtos e componentes da solução.
+          </h2>
+
+          <p class="case-intro">
+            As imagens abaixo foram selecionadas ou recriadas para demonstrar
+            a arquitetura e os produtos desenvolvidos, sem exposição de dados
+            pessoais ou informações operacionais restritas.
+          </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <article class="gallery-item featured-image">
+
+            <div class="gallery-image-wrapper">
+              <img
+                src="../images/auxilio-pernambuco/01-painel-ouvidoria.png"
+                alt="Painel Power BI desenvolvido para apoio à Ouvidoria"
+              >
+            </div>
+
+            <div class="gallery-caption">
+              <span>Power BI</span>
+
+              <h3>Painel de consulta para a Ouvidoria</h3>
+
+              <p>
+                Consulta da situação cadastral, estado da parcela e critérios
+                utilizados para orientação ao cidadão.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="gallery-item">
+
+            <div class="gallery-image-wrapper">
+              <img
+                src="../images/auxilio-pernambuco/02-fluxo-pentaho.png"
+                alt="Fluxo ETL principal desenvolvido no Pentaho PDI"
+              >
+            </div>
+
+            <div class="gallery-caption">
+              <span>Pentaho PDI</span>
+
+              <h3>Pipeline ETL</h3>
+
+              <p>
+                Orquestração das etapas de preparação, carga, cruzamento,
+                regras, ranking, relatórios e pagamento.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="gallery-item">
+
+            <div class="gallery-image-wrapper">
+              <img
+                src="../images/auxilio-pernambuco/03-modelo-dados.png"
+                alt="Modelo de dados simplificado do projeto"
+              >
+            </div>
+
+            <div class="gallery-caption">
+              <span>PostgreSQL</span>
+
+              <h3>Modelo de dados</h3>
+
+              <p>
+                Estrutura organizada em camadas de ingestão, consolidação,
+                análise, ranking, parcelas e remessas.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="gallery-item">
+
+            <div class="gallery-image-wrapper">
+              <img
+                src="../images/auxilio-pernambuco/04-relatorio-executivo.png"
+                alt="Relatório executivo demonstrativo com dados fictícios"
+              >
+            </div>
+
+            <div class="gallery-caption">
+              <span>Relatórios</span>
+
+              <h3>Monitoramento consolidado</h3>
+
+              <p>
+                Exemplo demonstrativo de acompanhamento dos arquivos,
+                registros, correspondências e resultados por município.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="gallery-item">
+
+            <div class="gallery-image-wrapper">
+              <img
+                src="../images/auxilio-pernambuco/05-validacao-remessa.png"
+                alt="Validação demonstrativa da remessa bancária"
+              >
+            </div>
+
+            <div class="gallery-caption">
+              <span>Pagamento</span>
+
+              <h3>Validação da remessa</h3>
+
+              <p>
+                Conciliação da quantidade de parcelas e do valor total antes
+                da geração do arquivo bancário.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONFIDENCIALIDADE -->
+    <section class="case-section">
+      <div class="container">
+
+        <div class="confidentiality-box">
+
+          <strong>
+            Confidencialidade e proteção de dados
+          </strong>
+
+          <p>
+            Este estudo apresenta uma visão resumida e demonstrativa da
+            solução. Dados pessoais, documentos, credenciais, informações
+            bancárias, caminhos internos e detalhes operacionais restritos
+            foram removidos, anonimizados ou substituídos por dados fictícios.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- VOLTAR -->
+    <section class="project-navigation">
+      <div class="container project-navigation-content">
+
+        <a
+          href="../index.html#projetos"
+          class="back-link"
+        >
+          ← Voltar para todos os projetos
+        </a>
+
+        <a
+          href="../index.html#contato"
+          class="btn primary"
+        >
+          Entrar em contato
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <p>
+        © <span id="current-year"></span> Aline Soares
+      </p>
+
+      <p>
+        Dados • Business Intelligence • Analytics
+      </p>
+
+    </div>
+  </footer>
+
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
