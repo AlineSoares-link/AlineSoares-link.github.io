@@ -1040,3 +1040,68 @@ button {
     }
 
 }
+/* ===========================
+   PRÉVIA DOS PROJETOS
+=========================== */
+
+.project-card-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-card-link:hover .project-link {
+    color: var(--cyan);
+}
+
+.project-preview {
+    width: calc(100% + 60px);
+    height: 235px;
+
+    margin:
+        -30px
+        -30px
+        28px;
+
+    padding: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border);
+    border-radius:
+        var(--radius)
+        var(--radius)
+        0
+        0;
+
+    background: #f4f6f8;
+}
+
+.project-preview img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 13px;
+}
+
+.muted-link {
+    color: var(--text-muted);
+    cursor: default;
+}
+
+@media (max-width: 760px) {
+
+    .project-preview {
+        height: 210px;
+    }
+
+}
